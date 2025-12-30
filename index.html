@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Love Surprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Heart Page -->
+        <div id="heart-page" class="page active">
+            <h1>Click the Heart to Begin ❤️</h1>
+            <p>Fill the heart with love to continue...</p>
+            <div class="heart-box">
+                <div class="heart" id="heart"></div>
+            </div>
+            <p style="margin-top: 20px; color: #666; font-style: italic;">Click the heart above</p>
+        </div>
+
+        <!-- Gift Box Page -->
+        <div id="gift-page" class="page">
+            <h1>Unwrap Your Surprise! 🎁</h1>
+            <p>Click on each obstacle to reveal your gift</p>
+            <div class="gift-container">
+                <div class="gift-center" id="gift-center">
+                    <i class="fas fa-gift gift-icon"></i>
+                    <div class="gift-text">Your Surprise!</div>
+                </div>
+                <div class="obstacle work" id="work">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Work</span>
+                </div>
+                <div class="obstacle stress" id="stress">
+                    <i class="fas fa-brain"></i>
+                    <span>Stress</span>
+                </div>
+                <div class="obstacle sadness" id="sadness">
+                    <i class="fas fa-cloud-rain"></i>
+                    <span>Sadness</span>
+                </div>
+                <div class="obstacle distance" id="distance">
+                    <i class="fas fa-road"></i>
+                    <span>Distance</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Golden Ticket Page -->
+        <div id="ticket-page" class="page">
+            <h1>Your Golden Ticket 🎫</h1>
+            <div class="ticket">
+                <h2 style="margin-top: 0;">🎫 Unlimited Love Pass</h2>
+                <p><strong>Valid:</strong> Forever & Ever</p>
+                <p><strong>Benefits:</strong> Unlimited hugs, kisses, and happy moments</p>
+                <p><strong>Holder:</strong> You ❤️</p>
+                <button class="claim-btn" id="claim-btn">Claim Your Ticket</button>
+            </div>
+        </div>
+
+        <!-- Moments Gallery -->
+        <div id="gallery-page" class="page">
+            <h1>Our Beautiful Memories 💖</h1>
+            <p>Click on any photo to see the next memory...</p>
+            <div class="photo-book">
+                <div class="photo-page active" id="photo-page-1">
+                    <div class="photo-frame" id="photo-frame-1">
+                        <img src="images/pic1.jpeg" alt="Moment 1">
+                    </div>
+                </div>
+                <div class="photo-page" id="photo-page-2">
+                    <div class="photo-frame" id="photo-frame-2">
+                        <img src="images/pic2.jpeg" alt="Moment 2">
+                    </div>
+                </div>
+                <div class="photo-page" id="photo-page-3">
+                    <div class="photo-frame" id="photo-frame-3">
+                        <img src="images/pic3.jpeg" alt="Moment 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Year Poster -->
+        <div id="poster-page" class="page">
+            <h1>Happy New Year 2026! 🎉</h1>
+            <div class="poster-container">
+                <div class="poster">
+                    <div class="poster-header">
+                        <div class="fireworks">
+                            <i class="fas fa-fireworks"></i>
+                            <i class="fas fa-sparkles"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h2>A New Beginning</h2>
+                        <div class="year">2026</div>
+                    </div>
+                    
+                    <div class="poster-content">
+                        <div class="poster-message">
+                            <p class="greeting">Happy New Year My Love!</p>
+                            <div class="message-box">
+                                <p>Happy New Year, my love. As this new year begins, I just want you to know how grateful I am to have you in my life. You are my biggest blessing, my constant prayer, and the most beautiful part of my days. With you, even ordinary moments feel special, and every dream feels closer. I pray that this year brings you endless happiness, good health, peace in your heart, and all the love you truly deserve. No matter what this year brings, I promise to stand by you, support you, and love you even more deeply than before. Here’s to new beginnings, shared dreams, and a future where every year starts and ends with us—together. ❤️✨</p>
+                            </div>
+                        </div>
+                        
+                        <div class="poster-icons">
+                            <div class="icon-item">
+                                <i class="fas fa-heart"></i>
+                                <span>Love</span>
+                            </div>
+                            <div class="icon-item">
+                                <i class="fas fa-laugh-beam"></i>
+                                <span>Joy</span>
+                            </div>
+                            <div class="icon-item">
+                                <i class="fas fa-hands-holding"></i>
+                                <span>Togetherness</span>
+                            </div>
+                            <div class="icon-item">
+                                <i class="fas fa-magic"></i>
+                                <span>Magic</span>
+                            </div>
+                        </div>
+                        
+                        <div class="countdown">
+                            <div class="countdown-item">
+                                <div class="number">365</div>
+                                <div class="label">Days of Love</div>
+                            </div>
+                            <div class="countdown-item">
+                                <div class="number">12</div>
+                                <div class="label">Months of Joy</div>
+                            </div>
+                            <div class="countdown-item">
+                                <div class="number">∞</div>
+                                <div class="label">Forever Together</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="poster-footer">
+                        <p class="signature">With all my love,<br>My Wifeyyyyyyy</p>
+                        <div class="decorations">
+                            <i class="fas fa-heartbeat"></i>
+                            <i class="fas fa-kiss-wink-heart"></i>
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                    </div>
+                </div>
+                <button class="continue-btn" id="continue-btn">Continue <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Feedback Page -->
+        <div id="feedback-page" class="page">
+            <h1>Did You Enjoy This Surprise?</h1>
+            <div class="feedback">
+                <button class="btn" id="yes-btn">YES! ❤️</button>
+                <button class="btn no" id="no-btn">NO 😢</button>
+            </div>
+            <div class="response" id="response"></div>
+        </div>
+
+        <!-- Home Page (Only shown after YES) -->
+        <div id="home-page" class="page">
+            <div class="home-content">
+                <div class="home-heart">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h1>Thank You My Love!</h1>
+                <p class="home-message">You've made this journey special. I hope this little surprise brought a smile to your face.</p>
+                <p class="love-quote">"With you as my wife, every year, every moment, and every heartbeat feels complete. ❤️"</p>
+                <button class="restart-btn" id="restart-btn">Start Over <i class="fas fa-redo"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
